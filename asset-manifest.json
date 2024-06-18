@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/YuraShah/stars/static/css/main.502691cc.css",
+    "main.js": "/YuraShah/stars/static/js/main.a8c53c0e.js",
+    "static/js/453.a8a94dab.chunk.js": "/YuraShah/stars/static/js/453.a8a94dab.chunk.js",
+    "index.html": "/YuraShah/stars/index.html",
+    "main.502691cc.css.map": "/YuraShah/stars/static/css/main.502691cc.css.map",
+    "main.a8c53c0e.js.map": "/YuraShah/stars/static/js/main.a8c53c0e.js.map",
+    "453.a8a94dab.chunk.js.map": "/YuraShah/stars/static/js/453.a8a94dab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.502691cc.css",
+    "static/js/main.a8c53c0e.js"
+  ]
+}
