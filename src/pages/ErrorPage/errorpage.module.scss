@@ -1,0 +1,24 @@
+.container {
+   margin: 20px 0;
+   height: 100vh;
+   font-size: 25px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.number {
+   font-size: 3.5em;
+   font-weight: bold;
+   color: #2b2572;
+}
+
+@media(max-width: 1024px) {
+   .container {
+      font-size: 22px;
+   }
+}
+@media(max-width: 600px) {
+   .container {
+      font-size: 20px;
+   }
+}

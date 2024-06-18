@@ -1,0 +1,54 @@
+.cat__title {
+   font-size: 23px;
+   margin-bottom: 10px;
+}
+.cat__form {
+   width: 50%;
+   margin: 20px 0;
+}
+.cat__select {
+   font-size: 20px;
+   padding: 12px 5px;
+   width: 100%;
+   border-radius: 4px;
+   outline-color: #2b2572;
+}
+.cat__btn {
+   margin-top: 10px;
+   width: 100%;
+   padding: 12px 5px;
+   font-size: 90%;
+   border-radius: 4px;
+   border: none;
+   outline-color: #2b2572;
+   cursor: pointer;
+   background-color: #2b2572;
+   color: white;
+}
+
+@media (max-width: 600px) {
+   .cat__title {
+      font-size: 21px;
+   }
+   .cat__form {
+      width: 100%;
+   }
+   .cat__select {
+      font-size: 19px;
+   }
+}
+
+@media (max-width: 400px) {
+   .cat__title {
+      font-size: 20px;
+   }
+   .cat__select {
+      font-size: 18px;
+   }
+}
+
+@media (hover: hover) {
+   .cat__btn:hover {
+      background-color: #1e1a4b;
+   }
+}

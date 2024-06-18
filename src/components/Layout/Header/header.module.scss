@@ -1,0 +1,10 @@
+.header {
+   background-color: #2b2572;
+}
+
+
+@media (max-width: 950px) {
+   .header {
+      height: 100px;
+   }
+}

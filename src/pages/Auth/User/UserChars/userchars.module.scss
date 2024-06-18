@@ -1,0 +1,19 @@
+.menu {
+   list-style-position: inside;
+}
+.menu__list {
+   min-height: 60px;
+   &::marker {
+      color: rgb(27, 27, 107);
+   }
+}
+.menu__link {
+   text-decoration: none;
+   color: rgb(27, 27, 107);
+}
+
+@media(hover: hover) {
+   .menu__link:hover {
+      text-decoration: underline;
+   }
+}

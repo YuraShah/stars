@@ -1,0 +1,33 @@
+.navbar {
+   font-size: 22px;
+}
+.dropDown__menu {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.dropDown__menu_link {
+   display: block;
+   margin: 0 10px;
+   padding: 15px 10px;
+   text-decoration: none;
+   color: white;
+   white-space: nowrap;
+   outline-color: #d4a41f;
+}
+
+@media (max-width: 950px) {
+   .navbar {
+      display: none;
+   }
+}
+
+@media (hover: hover) {
+   .dropDown__menu_link:hover {
+      background-color: #d4a41f;
+   }
+   .dropDown_submenu_li:hover {
+      background-color: #d4a41f;
+   }
+}

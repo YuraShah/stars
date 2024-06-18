@@ -1,0 +1,16 @@
+.container {
+   line-height: 1.6;
+   padding: 20px 0;
+   font-size: 22px;
+}
+
+@media(max-width: 600px) {
+   .container {
+      font-size: 20px;
+   }
+}
+@media(max-width: 400px) {
+   .container {
+      font-size: 18px;
+   }
+}
