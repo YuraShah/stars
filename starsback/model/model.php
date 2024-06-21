@@ -128,16 +128,6 @@ class Model
       return $this->queryOneParamOneBind("SELECT user_cat_id, cat FROM `user_cat` WHERE user_id=?", $uid);
    }
 
-   public function addRefreshToken($uid, $refresh_token)
-   {
-      return $this->queryTwoParamsTwoBindsInsertIS("INSERT INTO `user_token` VALUES (NULL, ?, ?)", $uid, $refresh_token);
-   }
-
-   public function checkRefreshToken($uid, $refresh_token)
-   {
-      return $this->queryTwoParamsTwoBindsIS("SELECT user_token_id, FROM `user_token` WHERE user_id=? AND user_refresh_token=?", $uid, $refresh_token);
-   }
-
 }
 
 $model = new Model();
