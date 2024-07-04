@@ -73,10 +73,10 @@ class Model
       return $stmt->insert_id;
    }
 
-   public function queryTwoParamsTwoBindsInsertIS($sql, $uid, $cat)
+   public function queryTwoParamsTwoBindsInsertSS($sql, $email, $refresh_token)
    {
       $stmt = $this->conn->prepare($sql);
-      $stmt->bind_param('is', $uid, $cat);
+      $stmt->bind_param('ss', $email, $refresh_token);
       $stmt->execute();
       return $stmt->insert_id;
    }
@@ -117,14 +117,14 @@ class Model
       return $this->queryOneParamOneBind("SELECT * FROM `user` WHERE email=?", $email);
    }
 
-   public function addRefreshToken($uid, $refresh_token)
+   public function addRefreshToken($refresh_token, $email)
    {
-      return $this->queryTwoParamsTwoBindsInsertIS("INSERT INTO `user_token` VALUES (NULL, ?, ?)", $uid, $refresh_token);
+      return $this->queryTwoParamsTwoBindsInsertSS("UPDATE `user` SET refresh_token=? WHERE email=?", $refresh_token, $email);
    }
 
    public function checkRefreshToken($uid, $refresh_token)
    {
-      return $this->queryTwoParamsTwoBindsIS("SELECT user_token_id, FROM `user_token` WHERE user_id=? AND user_refresh_token=?", $uid, $refresh_token);
+      return $this->queryTwoParamsTwoBindsIS("SELECT refresh_token, FROM `user` WHERE id=? AND refresh_token=?", $uid, $refresh_token);
    }
 
 
